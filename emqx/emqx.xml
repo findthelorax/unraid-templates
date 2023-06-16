@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>emqx-1</Name>
+  <Name>emqx</Name>
   <Repository>emqx</Repository>
   <Registry>https://hub.docker.com/_/emqx/</Registry>
   <Network>bridge</Network>
@@ -31,7 +31,4 @@
   <Config Name="8085" Target="8085" Default="8085" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8085</Config>
   <Config Name="8084" Target="8084" Default="8084" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8084</Config>
   <Config Name="8883" Target="8883" Default="8883" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8883</Config>
-  <Config Name="EMQX_NODE_NAME" Target="EMQX_NODE_NAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="EMQX_CLUSTER__DISCOVERY_STRATEGY" Target="EMQX_CLUSTER__DISCOVERY_STRATEGY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">static</Config>
-  <Config Name="EMQX_CLUSTER__STATIC__SEEDS" Target="EMQX_CLUSTER__STATIC__SEEDS" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
 </Container>
