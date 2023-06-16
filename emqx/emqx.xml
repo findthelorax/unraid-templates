@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>emqx</Name>
+  <Name>emqx-1</Name>
   <Repository>emqx</Repository>
   <Registry>https://hub.docker.com/_/emqx/</Registry>
   <Network>bridge</Network>
@@ -9,31 +9,29 @@
   <Privileged>false</Privileged>
   <Support>https://hub.docker.com/_/emqx/</Support>
   <Project/>
-  <Overview>The most scalable open-source MQTT broker for IoT, IIoT, connected vehicles, and more.&#xD;
-&#xD;
-Converted By Community Applications   Always verify this template (and values)  against the support page for the container&#xD;
-&#xD;
-https://hub.docker.com/_/emqx/</Overview>
-  <Category/>
+  <Overview/>
+  <Category>HomeAutomation:</Category>
   <WebUI>http://[IP]:[PORT:18083]/</WebUI>
   <TemplateURL/>
   <Icon>https://avatars.githubusercontent.com/u/25221711?v=4</Icon>
   <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1684676459</DateInstalled>
+  <DateInstalled>1686940436</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="1883" Target="1883" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">1883</Config>
-  <Config Name="appdata" Target="/opt/emqx/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/emqx</Config>
-  <Config Name="logs" Target="/opt/emqx/log" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/emqx/log</Config>
-  <Config Name="EMQX Version" Target="EMQX_VERSION" Default="5.0.24" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">5.0.24</Config>
-  <Config Name="Web UI" Target="18083" Default="18083" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">18083</Config>
-  <Config Name="Port 1" Target="11883" Default="11883" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">11883</Config>
-  <Config Name="Port 2" Target="4370" Default="4370" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">4370</Config>
-  <Config Name="Port 3" Target="5369" Default="5369" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">5369</Config>
-  <Config Name="Port 4" Target="8085" Default="8083" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8085</Config>
-  <Config Name="Port 5" Target="8084" Default="8084" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8084</Config>
-  <Config Name="Port 6" Target="8883" Default="8883" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8883</Config>
+  <Config Name="appdata" Target="/opt/emqx/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="logs" Target="/opt/emqx/log" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="webui" Target="18083" Default="18083" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">18083</Config>
+  <Config Name="mqtt" Target="1883" Default="1883" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">1883</Config>
+  <Config Name="11883" Target="11883" Default="11883" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">11883</Config>
+  <Config Name="4370" Target="4370" Default="4370" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">4370</Config>
+  <Config Name="5369" Target="5369" Default="5369" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">5369</Config>
+  <Config Name="8085" Target="8085" Default="8085" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8085</Config>
+  <Config Name="8084" Target="8084" Default="8084" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8084</Config>
+  <Config Name="8883" Target="8883" Default="8883" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8883</Config>
+  <Config Name="EMQX_NODE_NAME" Target="EMQX_NODE_NAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="EMQX_CLUSTER__DISCOVERY_STRATEGY" Target="EMQX_CLUSTER__DISCOVERY_STRATEGY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">static</Config>
+  <Config Name="EMQX_CLUSTER__STATIC__SEEDS" Target="EMQX_CLUSTER__STATIC__SEEDS" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
 </Container>
