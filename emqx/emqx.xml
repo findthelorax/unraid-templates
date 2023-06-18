@@ -13,7 +13,8 @@
 &#xD;
 Configuration&#xD;
 All EMQX Configuration in etc/emqx.conf can be configured via environment variables.&#xD;
-see: https://hub.docker.com/r/emqx/emqx&#xD;
+By default, the environment variables with EMQX_ prefix are mapped to key-value pairs in configuration files.&#xD;
+You can change the prefix by overriding HOCON_ENV_OVERRIDE_PREFIX.&#xD;
 &#xD;
 </Overview>
   <Category>HomeAutomation:</Category>
