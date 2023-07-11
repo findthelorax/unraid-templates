@@ -7,8 +7,8 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://hub.docker.com/r/emqx/emqx</Support>
-  <Project/>
+  <Support>https://forums.unraid.net/topic/141872-support-findthelorax-docker-templates</Support>
+  <Project>https://hub.docker.com/r/emqx/emqx</Project>
   <Overview>EMQX is the world's most scalable open-source MQTT broker with a high performance that connects 100M+ IoT devices in 1 cluster, while maintaining 1M message per second throughput and sub-millisecond latency.&#xD;
 &#xD;
 Configuration&#xD;

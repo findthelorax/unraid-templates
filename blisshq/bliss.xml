@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://hub.docker.com/r/romancin/bliss/</Support>
+  <Support>https://forums.unraid.net/topic/141872-support-findthelorax-docker-templates</Support>
   <Project>https://hub.docker.com/r/romancin/bliss/</Project>
   <Overview>Instructions:&#xD;
 &#xD;
