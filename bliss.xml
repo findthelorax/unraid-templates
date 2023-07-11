@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>bliss</Name>
+  <Repository>romancin/bliss</Repository>
+  <Registry>https://hub.docker.com/r/romancin/bliss/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/romancin/bliss/</Support>
+  <Project>https://hub.docker.com/r/romancin/bliss/</Project>
+  <Overview>Instructions:&#xD;
+&#xD;
+Map any local port to 3220 for web access&#xD;
+Map any local port to 3221 (used for bliss internal web server)&#xD;
+Map a local volume to /config (Stores configuration data)&#xD;
+Map a local volume to /music (This is the directory wher you should put your music for bliss to scan)&#xD;
+&#xD;
+Setup the application&#xD;
+Once the docker container is up and running you can access the WebUI at host-ip-address:3220.&#xD;
+&#xD;
+Out of the box you have 100 fixes included as a trial, but I recommend that you buy the amount of fixes you need.</Overview>
+  <Category>Tools:</Category>
+  <WebUI>http://[IP]:[PORT:3220]</WebUI>
+  <TemplateURL/>
+  <Icon>https://www.blisshq.com/images/logo_551x198.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1689039388</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="3220" Default="3220" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3220</Config>
+  <Config Name="Internal Web Server" Target="3221" Default="3221" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3221</Config>
+  <Config Name="appdata" Target="/config" Default="/mnt/user/appdata/bliss" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/bliss</Config>
+  <Config Name="music" Target="/music" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"></Config>
+</Container>
