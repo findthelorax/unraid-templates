@@ -31,8 +31,11 @@ Out of the box you have 100 fixes included as a trial, but I recommend that you 
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="WebUI" Target="3220" Default="3220" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3220</Config>
-  <Config Name="Internal Web Server" Target="3221" Default="3221" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3221</Config>
-  <Config Name="appdata" Target="/config" Default="/mnt/user/appdata/bliss" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/bliss</Config>
+  <Config Name="WebUI" Target="3220" Default="3220" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">3220</Config>
+  <Config Name="Internal Web Server" Target="3221" Default="3221" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">3221</Config>
+  <Config Name="appdata" Target="/config" Default="/mnt/user/appdata/bliss" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/bliss</Config>
   <Config Name="music" Target="/music" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="{3}" Description="" Type="Variable" Display="always" Required="true" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="{3}" Description="" Type="Variable" Display="always" Required="true" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">022</Config>
 </Container>

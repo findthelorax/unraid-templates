@@ -15,6 +15,7 @@ Configuration&#xD;
 All EMQX Configuration in etc/emqx.conf can be configured via environment variables.&#xD;
 By default, the environment variables with EMQX_ prefix are mapped to key-value pairs in configuration files.&#xD;
 You can change the prefix by overriding HOCON_ENV_OVERRIDE_PREFIX.&#xD;
+default login: admin:public&#xD;
 &#xD;
 </Overview>
   <Category>HomeAutomation:</Category>
@@ -32,10 +33,13 @@ You can change the prefix by overriding HOCON_ENV_OVERRIDE_PREFIX.&#xD;
   <Config Name="logs" Target="/opt/emqx/log" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/cacheapps/appdata/emqx/log/</Config>
   <Config Name="webui" Target="18083" Default="18083" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">18083</Config>
   <Config Name="mqtt" Target="1883" Default="1883" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">1883</Config>
-  <Config Name="11883" Target="11883" Default="11883" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">11883</Config>
-  <Config Name="4370" Target="4370" Default="4370" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">4370</Config>
-  <Config Name="5369" Target="5369" Default="5369" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">5369</Config>
-  <Config Name="8085" Target="8085" Default="8085" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8085</Config>
-  <Config Name="8084" Target="8084" Default="8084" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8084</Config>
-  <Config Name="8883" Target="8883" Default="8883" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8883</Config>
+  <Config Name="11883" Target="11883" Default="11883" Mode="tcp" Description="" Type="Port" Display="advanced" Required="false" Mask="false">11883</Config>
+  <Config Name="4370" Target="4370" Default="4370" Mode="tcp" Description="" Type="Port" Display="advanced" Required="false" Mask="false">4370</Config>
+  <Config Name="5369" Target="5369" Default="5369" Mode="tcp" Description="" Type="Port" Display="advanced" Required="false" Mask="false">5369</Config>
+  <Config Name="8085" Target="8085" Default="8085" Mode="tcp" Description="" Type="Port" Display="advanced" Required="false" Mask="false">8085</Config>
+  <Config Name="8084" Target="8084" Default="8084" Mode="tcp" Description="" Type="Port" Display="advanced" Required="false" Mask="false">8084</Config>
+  <Config Name="8883" Target="8883" Default="8883" Mode="tcp" Description="" Type="Port" Display="advanced" Required="false" Mask="false">8883</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="{3}" Description="" Type="Variable" Display="always" Required="true" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="{3}" Description="" Type="Variable" Display="always" Required="true" Mask="false">100</Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">022</Config>
 </Container>
