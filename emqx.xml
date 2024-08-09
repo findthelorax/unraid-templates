@@ -25,12 +25,12 @@ default login: admin:public&#xD;
   <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1687088509</DateInstalled>
+  <DateInstalled></DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="appdata" Target="/opt/emqx/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/cacheapps/appdata/emqx</Config>
-  <Config Name="logs" Target="/opt/emqx/log" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/cacheapps/appdata/emqx/log/</Config>
+  <Config Name="appdata" Target="/opt/emqx/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/emqx</Config>
+  <Config Name="logs" Target="/opt/emqx/log" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/emqx/log/</Config>
   <Config Name="webui" Target="18083" Default="18083" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">18083</Config>
   <Config Name="mqtt" Target="1883" Default="1883" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">1883</Config>
   <Config Name="11883" Target="11883" Default="11883" Mode="tcp" Description="" Type="Port" Display="advanced" Required="false" Mask="false">11883</Config>

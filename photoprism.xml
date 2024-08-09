@@ -21,7 +21,7 @@ Database lockups: If you got problems where the database lockes up you should sw
     <ExtraParams/>
     <PostArgs/>
     <CPUset/>
-    <DateInstalled>1699529346</DateInstalled>
+    <DateInstalled></DateInstalled>
     <DonateText>If you like my work please </DonateText>
     <DonateLink>https://www.paypal.me/photoprism</DonateLink>
     <Requires/>
