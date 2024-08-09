@@ -37,5 +37,5 @@ Out of the box you have 100 fixes included as a trial, but I recommend that you 
   <Config Name="music" Target="/music" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"></Config>
   <Config Name="PUID" Target="PUID" Default="99" Mode="{3}" Description="" Type="Variable" Display="always" Required="true" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="{3}" Description="" Type="Variable" Display="always" Required="true" Mask="false">100</Config>
-  <Config Name="UMASK" Target="UMASK" Default="022" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">022</Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">002</Config>
 </Container>

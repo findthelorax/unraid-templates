@@ -41,5 +41,5 @@ default login: admin:public&#xD;
   <Config Name="8883" Target="8883" Default="8883" Mode="tcp" Description="" Type="Port" Display="advanced" Required="false" Mask="false">8883</Config>
   <Config Name="PUID" Target="PUID" Default="99" Mode="{3}" Description="" Type="Variable" Display="always" Required="true" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="{3}" Description="" Type="Variable" Display="always" Required="true" Mask="false">100</Config>
-  <Config Name="UMASK" Target="UMASK" Default="022" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">022</Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">002</Config>
 </Container>
