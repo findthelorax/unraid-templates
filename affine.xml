@@ -39,11 +39,11 @@ docker run -e DATABASE_URL=postgres://affine:affine@postgres:5432/affine ghcr.io
     <DonateLink/>
     <Requires/>
     <Config Name="WebUI" Target="3010" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false"></Config>
-    <Config Name="AFFINE_ADMIN_PASSWORD" Target="AFFINE_ADMIN_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
     <Config Name="AFFINE_ADMIN_EMAIL" Target="AFFINE_ADMIN_EMAIL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+    <Config Name="AFFINE_ADMIN_PASSWORD" Target="AFFINE_ADMIN_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
     <Config Name="AFFINE_SERVER_HOST" Target="AFFINE_SERVER_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
     <Config Name="AFFINE_SERVER_PORT" Target="AFFINE_SERVER_PORT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
-    <Config Name="AFFINE_SERVER_HTTPS" Target="AFFINE_SERVER_HTTPS" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+    <Config Name="AFFINE_SERVER_HTTPS" Target="AFFINE_SERVER_HTTPS" Default="false" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
     <Config Name="MAILER_HOST" Target="MAILER_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
     <Config Name="MAILER_PORT" Target="MAILER_PORT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
     <Config Name="MAILER_USER" Target="MAILER_USER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
@@ -53,6 +53,7 @@ docker run -e DATABASE_URL=postgres://affine:affine@postgres:5432/affine ghcr.io
     <Config Name="REDIS_SERVER_HOST" Target="REDIS_SERVER_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">redis</Config>
     <Config Name="REDIS_SERVER_PORT" Target="REDIS_SERVER_PORT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">6375</Config>
     <Config Name="NODE_ENV" Target="NODE_ENV" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">production</Config>
-    <Config Name="NODE_OPTIONS" Target="NODE_OPTIONS" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="NODE_OPTIONS" Target="NODE_OPTIONS" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/></Config>
     <Config Name="config" Target="/root/.affine" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/affine</Config>
+    <Config Name="TELEMETRY_ENABLE" Target="TELEMETRY_ENABLE" Default="false" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>false</Config>
 </Container>
