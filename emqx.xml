@@ -28,8 +28,8 @@ default login: admin:public&#xD;
   <DonateText>If you like my work please donate: </DonateText>
   <DonateLink>https://buymeacoffee.com/findthelorax</DonateLink>
   <Requires/>
-  <Config Name="appdata" Target="/opt/emqx/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/cacheapps/appdata/emqx</Config>
-  <Config Name="logs" Target="/opt/emqx/log" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/cacheapps/appdata/emqx/log/</Config>
+  <Config Name="appdata" Target="/opt/emqx/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/emqx</Config>
+  <Config Name="logs" Target="/opt/emqx/log" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/emqx/log/</Config>
   <Config Name="webui" Target="18083" Default="18083" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">18083</Config>
   <Config Name="mqtt" Target="1883" Default="1883" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">1883</Config>
   <Config Name="11883" Target="11883" Default="11883" Mode="tcp" Description="" Type="Port" Display="advanced" Required="false" Mask="false">11883</Config>
@@ -40,5 +40,5 @@ default login: admin:public&#xD;
   <Config Name="8883" Target="8883" Default="8883" Mode="tcp" Description="" Type="Port" Display="advanced" Required="false" Mask="false">8883</Config>
   <Config Name="PUID" Target="PUID" Default="99" Mode="{3}" Description="" Type="Variable" Display="always" Required="true" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="{3}" Description="" Type="Variable" Display="always" Required="true" Mask="false">100</Config>
-  <Config Name="UMASK" Target="UMASK" Default="022" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">022</Config>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">002</Config>
 </Container>
