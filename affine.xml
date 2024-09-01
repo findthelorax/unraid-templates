@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<Container version="2">
+    <Name>AFFiNE</Name>
+    <Repository>ghcr.io/toeverything/affine-graphql:stable</Repository>
+    <Registry>https://docs.affine.pro/docs/</Registry>
+    <Network>bridge</Network>
+    <MyIP/>
+    <Shell>sh</Shell>
+    <Privileged>false</Privileged>
+    <Support>https://forums.unraid.net/topic/141872-support-findthelorax-docker-templates/</Support>
+    <Project>https://hub.docker.com/r/paulknulst/affine</Project>
+    <Overview>Hello/Bonjour/Aloha/&#x4F60;&#x597D;&#xD;
+&#xD;
+Welcome.&#xD;
+&#xD;
+AFFiNE is an open-source, all-in-one workspace and an operating system for all the building blocks that assemble your knowledge base and much more &#x2014; wiki, knowledge management, presentation and digital assets. It&#x2019;s a better alternative to Notion and Miro.&#xD;
+&#xD;
+To Shape, not to adapt. Tools can impact your lifestyle. AFFiNE is built for individual &amp;amp; teams who care their data, who refuse vendor lock-in, and who want to have control over their essential tools. More on What AFFiNE is Not&#xD;
+You own your data, with no compromises&#xD;
+&#xD;
+READ ME: Currently it seems like there is an issue with database migration with this template. There is a docker-compose that also works:&#xD;
+https://github.com/toeverything/AFFiNE/blob/stable/.github/deployment/self-host/compose.yaml&#xD;
+&#xD;
+To get this running, you will need postgresql and redis. After those are working, download AFFiNE. It should stop with an error about &#xD;PrismaClientInitializationError: &#xD;
+Invalid `prisma.runtimeConfig.findMany()` invocation: &#xD;
+&#xD;
+Run the below command adjusting the database url as necessary then you should be able to access the WebUI.&#xD;
+&#xD;
+docker run -e DATABASE_URL=postgres://affine:affine@postgres:5432/affine ghcr.io/toeverything/affine-graphql:stable sh -c "yarn prisma migrate deploy &amp;amp;&amp;amp; node --import ./scripts/register.js ./dist/data/index.js" </Overview>
+    <Category>Productivity:</Category>
+    <WebUI>http://[IP]:[PORT:3010]/</WebUI>
+    <TemplateURL/>
+    <Icon>https://raw.githubusercontent.com/toeverything/AFFiNE/canary/packages/frontend/electron/resources/icons/icon.png</Icon>
+    <ExtraParams/>
+    <PostArgs/>
+    <CPUset/>
+    <DonateText>If you like my work please donate: </DonateText>
+    <DonateLink>https://buymeacoffee.com/findthelorax</DonateLink>
+    <Requires/>
+    <Config Name="WebUI" Target="3010" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false"></Config>
+    <Config Name="AFFINE_ADMIN_EMAIL" Target="AFFINE_ADMIN_EMAIL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+    <Config Name="AFFINE_ADMIN_PASSWORD" Target="AFFINE_ADMIN_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+    <Config Name="AFFINE_SERVER_HOST" Target="AFFINE_SERVER_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+    <Config Name="AFFINE_SERVER_PORT" Target="AFFINE_SERVER_PORT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+    <Config Name="AFFINE_SERVER_HTTPS" Target="AFFINE_SERVER_HTTPS" Default="false" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+    <Config Name="MAILER_HOST" Target="MAILER_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+    <Config Name="MAILER_PORT" Target="MAILER_PORT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+    <Config Name="MAILER_USER" Target="MAILER_USER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+    <Config Name="MAILER_PASSWORD" Target="MAILER_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+    <Config Name="MAILER_SENDER" Target="MAILER_SENDER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+    <Config Name="DATABASE_URL" Target="DATABASE_URL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">postgres://affine:affine@postgres:5432/affine</Config>
+    <Config Name="REDIS_SERVER_HOST" Target="REDIS_SERVER_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">redis</Config>
+    <Config Name="REDIS_SERVER_PORT" Target="REDIS_SERVER_PORT" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">6375</Config>
+    <Config Name="NODE_ENV" Target="NODE_ENV" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">production</Config>
+    <Config Name="NODE_OPTIONS" Target="NODE_OPTIONS" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+    <Config Name="config" Target="/root/.affine" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/affine</Config>
+    <Config Name="TELEMETRY_ENABLE" Target="TELEMETRY_ENABLE" Default="false" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+</Container>

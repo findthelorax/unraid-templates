@@ -25,9 +25,8 @@ default login: admin:public&#xD;
   <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1687088509</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
+  <DonateText>If you like my work please donate: </DonateText>
+  <DonateLink>https://buymeacoffee.com/findthelorax</DonateLink>
   <Requires/>
   <Config Name="appdata" Target="/opt/emqx/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/cacheapps/appdata/emqx</Config>
   <Config Name="logs" Target="/opt/emqx/log" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/cacheapps/appdata/emqx/log/</Config>
