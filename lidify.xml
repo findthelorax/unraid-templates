@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<Container version="2">
+    <Name>lidify</Name>
+    <Repository>thewicklowwolf/lidify</Repository>
+    <Registry>https://hub.docker.com/r/thewicklowwolf/lidify/</Registry>
+    <Network>bridge</Network>
+    <MyIP />
+    <Shell>sh</Shell>
+    <Privileged>false</Privileged>
+    <Support>https://hub.docker.com/r/thewicklowwolf/lidify/</Support>
+    <Project />
+    <Overview>Artist discovery tool for Lidarr via Spotify or LastFM&#xD;
+        &#xD;
+        Web GUI for finding similar artists to selected Lidarr artists.&#xD;
+        &#xD;
+        https://hub.docker.com/r/thewicklowwolf/lidify/</Overview>
+    <Category />
+    <WebUI>http://[IP]:[PORT:5000]</WebUI>
+    <TemplateURL />
+    <Icon>https://raw.githubusercontent.com/TheWicklowWolf/Lidify/main/src/static/lidify.png</Icon>
+    <ExtraParams />
+    <PostArgs />
+    <CPUset />
+    <DateInstalled>1726573921</DateInstalled>
+    <DonateText />
+    <DonateLink />
+    <Requires />
+    <Config Name="Container Port 1" Target="5000" Default="5000" Mode="tcp" Description=""
+        Type="Port" Display="always" Required="true" Mask="false">5000</Config>
+    <Config Name="config" Target="/lidify/config" Default="" Mode="rw" Description="" Type="Path"
+        Display="always" Required="true" Mask="false">/mnt/user/appdata/lidify</Config>
+    <Config Name="root_folder_path" Target="root_folder_path" Default="" Mode="" Description=""
+        Type="Variable" Display="always" Required="true" Mask="false"></Config>
+    <Config Name="lidarr_address" Target="lidarr_address" Default="" Mode="" Description=""
+        Type="Variable" Display="always" Required="true" Mask="false">http://127.0.0.1:8686</Config>
+    <Config Name="lidarr_api_key" Target="lidarr_api_key" Default="" Mode="" Description=""
+        Type="Variable" Display="always" Required="true" Mask="false">
+    </Config>
+    <Config Name="spotify_client_id" Target="spotify_client_id" Default="" Mode="" Description=""
+        Type="Variable" Display="always" Required="false" Mask="false">
+    </Config>
+    <Config Name="spotify_client_secret" Target="spotify_client_secret" Default="" Mode=""
+        Description="" Type="Variable" Display="always" Required="false" Mask="false">
+    </Config>
+    <Config Name="last_fm_api_key" Target="last_fm_api_key" Default="" Mode="" Description=""
+        Type="Variable" Display="always" Required="false" Mask="false">
+    </Config>
+    <Config Name="last_fm_api_secret" Target="last_fm_api_secret" Default="" Mode="" Description=""
+        Type="Variable" Display="always" Required="false" Mask="false">
+    </Config>
+    <Config Name="mode" Target="mode" Default="" Mode="" Description="" Type="Variable"
+        Display="always" Required="false" Mask="false"></Config>
+    <Config Name="auto_start" Target="auto_start" Default="" Mode="" Description="" Type="Variable"
+        Display="always" Required="false" Mask="false"></Config>
+</Container>

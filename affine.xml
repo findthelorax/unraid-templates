@@ -34,7 +34,7 @@ docker run -e DATABASE_URL=postgres://affine:affine@postgres:5432/affine ghcr.io
     <ExtraParams/>
     <PostArgs/>
     <CPUset/>
-    <DonateText>If you like my work please donate: </DonateText>
+    <DonateText>If you like my template please donate: </DonateText>
     <DonateLink>https://buymeacoffee.com/findthelorax</DonateLink>
     <Requires/>
     <Config Name="WebUI" Target="3010" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false"></Config>

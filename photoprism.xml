@@ -21,7 +21,7 @@ Database lockups: If you got problems where the database lockes up you should sw
     <ExtraParams/>
     <PostArgs/>
     <CPUset/>
-    <DonateText>If you like my work please donate: </DonateText>
+    <DonateText>If you like my template please donate: </DonateText>
     <DonateLink>https://buymeacoffee.com/findthelorax</DonateLink>
     <Requires/>
     <Config Name="Data Dir" Target="/photoprism/storage" Default="" Mode="rw" Description="Storage PATH for generated files like cache and index (Keep cache, settings and database)" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/photoprism</Config>

@@ -25,7 +25,7 @@ default login: admin:public&#xD;
   <ExtraParams>--restart unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
-  <DonateText>If you like my work please donate: </DonateText>
+  <DonateText>If you like my template please donate: </DonateText>
   <DonateLink>https://buymeacoffee.com/findthelorax</DonateLink>
   <Requires/>
   <Config Name="appdata" Target="/opt/emqx/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/emqx</Config>
