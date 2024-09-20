@@ -27,7 +27,7 @@ Out of the box you have 100 fixes included as a trial, but I recommend that you 
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DonateText>If you like my work please donate: </DonateText>
+  <DonateText>If you like my template please donate: </DonateText>
   <DonateLink>https://buymeacoffee.com/findthelorax</DonateLink>
   <Requires/>
   <Config Name="WebUI" Target="3220" Default="3220" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">3220</Config>
